@@ -22,3 +22,15 @@ class Queue:
 
     def peek(self): #return top element in self.items
         return self.items[0]
+
+#execute code as script
+if __name__ == '__main__':
+    q = Queue() #store queue class in this variable
+    print(q.is_empty())
+    q.enqueue('First')
+    q.enqueue('Second')
+    print(q)
+    print(q.dequeue())
+    print(q)
+    print(q.size())
+    print(q.peek())
