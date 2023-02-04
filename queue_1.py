@@ -11,4 +11,11 @@ class Queue:
     def is_empty(self): #return inverse boolean value
         return not self.items
 
-    
+    def enqueue(self, item): #add item to self.items
+        self.items.append(item)
+
+    def dequeue(self): #remove items from beginning
+        return self.items.pop(0)
+
+    def size(self): #return the length of items
+        return len(self.items)
