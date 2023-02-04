@@ -19,3 +19,6 @@ class Queue:
 
     def size(self): #return the length of items
         return len(self.items)
+
+    def peek(self): #return top element in self.items
+        return self.items[0]
